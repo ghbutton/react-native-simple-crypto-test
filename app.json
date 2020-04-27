@@ -1,0 +1,17 @@
+{
+  "name": "react-native-simple-crypto-test",
+  "displayName": "react-native-simple-crypto-test",
+  "expo": {
+    "name": "react-native-simple-crypto-test",
+    "slug": "react-native-simple-crypto-test",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
