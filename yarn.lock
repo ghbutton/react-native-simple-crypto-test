@@ -5566,8 +5566,10 @@ react-native-screens@~2.2.0:
   dependencies:
     debounce "^1.2.0"
 
-"react-native-simple-crypto@file:../react-native-simple-crypto":
-  version "0.2.9"
+react-native-simple-crypto@0.2.12:
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/react-native-simple-crypto/-/react-native-simple-crypto-0.2.12.tgz#942d050950fa60b0191fd69ddd6807fe6de958aa"
+  integrity sha512-zjeYa7eJ4agPyj1UZhABjfPzmT6nwckzVwfN1XuPAylo98OImfspDMtBSeeGp0qh6GUF8Kd/q5WwJGKbKUB/3Q==
   dependencies:
     base64-js "^1.3.0"
     hex-lite "^1.5.0"
