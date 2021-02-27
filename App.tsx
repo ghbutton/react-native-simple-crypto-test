@@ -56,6 +56,7 @@ async function Test() {
   const arrayBufferToHash = RNSimpleCrypto.utils.convertUtf8ToArrayBuffer("test");
   const sha1ArrayBuffer = await RNSimpleCrypto.SHA.sha1(arrayBufferToHash);
   console.log("SHA1 hash bytes", toHex(sha1ArrayBuffer));
+
   if (toHex(sha1ArrayBuffer) !== sha1Hash) {
     console.error("SHA1 result mismatch!");
   }
@@ -122,6 +123,7 @@ async function Test() {
   console.log("RSA1024 private key", rsaKeys.private);
   console.log("RSA1024 public key", rsaKeys.public);
 
+  // UTF-8
   const rsaEncryptedMessage = await RNSimpleCrypto.RSA.encrypt(
     message,
     rsaKeys.public
@@ -143,6 +145,7 @@ async function Test() {
   );
   console.log("rsa signature verified:", validSignature);
 
+  // UTF-8
   const rsaDecryptedMessage = await RNSimpleCrypto.RSA.decrypt(
     rsaEncryptedMessage,
     rsaKeys.private
@@ -150,6 +153,25 @@ async function Test() {
   console.log("rsa Decrypt:", rsaDecryptedMessage);
   if (rsaDecryptedMessage !== message) {
     console.error("RSA decrypt returned unexpected result");
+  }
+
+
+  // Base64
+  const binaryData = "Zm9vYmFy";
+  const rsaEncryptedMessage64 = await RNSimpleCrypto.RSA.encrypt64(
+    binaryData,
+    rsaKeys.public
+  );
+  console.log("rsa Encrypt 64:", rsaEncryptedMessage64);
+
+  // Base 64
+  const rsaDecryptedMessage64 = await RNSimpleCrypto.RSA.decrypt64(
+    rsaEncryptedMessage64,
+    rsaKeys.private
+  );
+  console.log("rsa Decrypt 64:", rsaDecryptedMessage64);
+  if (rsaDecryptedMessage64 !== binaryData) {
+    console.error("RSA 64 decrypt returned unexpected result");
   }
 }
 

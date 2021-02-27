@@ -16,7 +16,7 @@
     "react-native-gesture-handler": "~1.6.0",
     "react-native-reanimated": "~1.7.0",
     "react-native-screens": "~2.2.0",
-    "react-native-simple-crypto": "0.2.12",
+    "react-native-simple-crypto": "file:../react-native-simple-crypto",
     "react-native-unimodules": "~0.9.0",
     "react-native-web": "~0.11.7"
   },

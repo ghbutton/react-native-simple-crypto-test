@@ -216,7 +216,7 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
   - React-jsinspector (0.61.5)
-  - react-native-simple-crypto (0.2.9):
+  - react-native-simple-crypto (0.2.12):
     - React
   - React-RCTActionSheet (0.61.5):
     - React-Core/RCTActionSheetHeaders (= 0.61.5)
@@ -479,7 +479,7 @@ SPEC CHECKSUMS:
   React-jsi: cb2cd74d7ccf4cffb071a46833613edc79cdf8f7
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
-  react-native-simple-crypto: c00b2f8fff8caea8f0f9ce659fe2b104fce6a8f6
+  react-native-simple-crypto: f37bae3fba012c1b389f1c68a3e4f68fe4d9b523
   React-RCTActionSheet: 600b4d10e3aea0913b5a92256d2719c0cdd26d76
   React-RCTAnimation: 791a87558389c80908ed06cc5dfc5e7920dfa360
   React-RCTBlob: d89293cc0236d9cb0933d85e430b0bbe81ad1d72
@@ -510,4 +510,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 191660318637a09cd9ac682182908ad588eea785
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
